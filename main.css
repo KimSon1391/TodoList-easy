@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+:root {
+    --addColor: aqua;
+    --removeAllColor: red;
+    --removeColor: #f76617;
+    --borderColor: #9f9f9fac;
+    --br: 30px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    padding: 40px 0;
+}
+
+.container {
+    width: 811px;
+    margin: 0 auto;
+}
+
+.todo h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 6px;
+}
+
+.todo h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 40px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--borderColor);
+    border-radius: var(--br);
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.form-control:focus {
+    outline: 0;
+    border-color: rgb(118, 118, 118);
+}
+
+button {
+    padding: 13px 0;
+    color: white;
+    font-weight: bold;
+    border-radius: var(--br);
+    transition: 0.4s;
+    font-size: 15px;
+    border: 2px solid transparent;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.add {
+    background: var(--addColor);
+    width: 100%;
+}
+
+.removeAll {
+    display: block;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    text-align: right;
+    margin-left: auto;
+    background: var(--removeAllColor);
+}
+
+.removeAll:hover {
+    border-color: var(--removeAllColor);
+    background: white;
+    color: var(--removeAllColor);
+    transition: 0.4s;
+}
+
+.list__wrap {
+    margin-top: 50px;
+}
+
+.list__wrap h3 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.list__item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--borderColor);
+    border-radius: var(--br);
+    padding: 6px 10px 6px 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.list__item span {
+    display: block;
+    width: 100%;
+}
+
+.remove {
+    background: var(--removeAllColor);
+    border-color: white;
+    padding: 10px;
+}
+
+.remove:hover {
+    background: white;
+    color: var(--removeAllColor);
+    border-color: var(--removeAllColor);
+    transition: 0.4s;
+}
